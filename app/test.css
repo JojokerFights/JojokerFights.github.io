@@ -1,1 +1,159 @@
-gg
+  @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Ultra&display=swap');
+  body {
+      background-color: #4682B4;
+      font-family: 'PT Serif', serif;
+  }
+  
+  header{
+      text-align: center;
+      margin-top: -30px;
+  }
+  
+  main{
+      text-align: center;
+      display: inline;
+  }
+  
+  nav{
+      text-align: center;
+  }
+  
+  .text {
+       border: solid 2px black;
+       border-radius: 15px;
+       background-color: LemonChiffon;
+       font-family: Courier New;
+       font-weight: bold;
+       color: blue;
+       text-align: center;
+       font-size: 16px;
+   }
+   
+   #messageContainer{
+       color: #BC8F8F;
+       font-size: 14;
+       font-weight: bold;
+       text-align: left;
+   }
+   
+  .title {
+       font-family: 'Ultra', serif;
+       color: #FAFAD2;
+       padding: 18px;
+       display: block;
+       font-size: 48px;
+   }
+
+  .tt {
+      background-color: #008B8B;
+      border-radius: 30px;
+      border: solid 1px black;
+      color: #F0E68C;
+      font-size: 23px;
+      margin-bottom: 4px;
+      font-weight: bold;
+      text-align: center;
+  }
+
+  .invite {
+      color: #F0E68C;
+      font-size: 22px;
+      font-family: Georgia;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+  }
+
+  #m2 {
+       width: 100%;
+       margin: auto;
+       border-radius: 0 50px 0 50px;
+       border: solid 2px black;
+       padding: 0;
+  }
+
+  .bat {
+      font-size: 20px;
+      font-family: Georgia;
+      background-color: DarkBlue;
+      border-radius: 10px;
+      color: yellow;
+      text-align: center;
+      margin-top: 0;
+      border: solid 1.5px black;
+      font-weight: bold;
+      padding-top: 0;
+      cursor: pointer;
+      text-align: center;
+  }
+
+  .btn {
+      font-size: 18px;
+      background-color: Blue;
+      border-radius: 10px;
+      color: LightCyan;
+      font-weight: bold;
+      border: solid 1.5px black;
+      cursor: pointer;
+  }
+  
+  #ai {
+       background-color: #3498db;
+       font-size: 26px;
+       display: block;
+       color: Gold;
+       text-align: center;
+       font-weight: bold;
+       border-radius: 15px;
+       margin: 10px;
+       padding: 10px;
+       border: solid 1.5px black;
+       cursor: pointer;
+   }
+   
+  #commentForm {
+    max-width: 700px; /* Установим максимальную ширину по своему усмотрению */  height: 110px;
+    margin: auto;/* Центрируем форму на странице */
+    background-color: #FFE4E1;
+    padding: 1px 5x 1px 1px;/* Добавляем немного отступов вокруг формы */
+    border: solid 3px green; /* Добавляем рамку толщиной 2px и цвета #3498db */
+    border-radius: 8px; /* Делаем углы формы более закругленными */
+    font-weight: bold;
+    }
+
+  #commentInput {
+    width: 90%; /* Занимаем 100% ширины контейнера */
+    padding: 10px; /* Добавляем отступы внутри поля ввода */
+    border: 1px solid #3498db;
+    }
+    
+  #worksb{
+     font-size: 17px;  
+     color: #191970;
+     font-family: Courier New;
+     margin-right: 0px;
+     padding-right: 0px;
+    }
+    
+  #result{
+      font-size: 18px;
+      border: 4px solid yellow;
+      font-weight: bold;
+      color: #4B0082;
+    }
+    
+  .rese{
+      font-family: Courier New;
+  }
+    
+  .com {
+    background-color: MediumVioletRed; /* Задаем цвет фона для кнопки */
+    color: white; /* Задаем цвет текста на кнопке */
+    padding: 10px; /* Добавляем отступы внутри кнопки */
+    border: none; /* Убираем границу кнопки */
+    border-radius: 5px; /* Делаем углы кнопки более закругленными */
+    font-size: 10px;
+    font-family: Arial;
+    cursor: pointer; /* Добавляем курсор при наведении на кнопку */
+}
