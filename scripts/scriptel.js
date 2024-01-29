@@ -8,11 +8,13 @@ function submitForm() {
         return;
     }
     // Проверка на наличие запрещенных слов
-    //var forbiddenWords = ["badword1", "badword2"]; //
-    //for (var i = 0; i < forbiddenWords.length; i++) {
-    //if (userInput.toLowerCase().includes(forbiddenWords[i])) {
-    //showMessage("Inappropriate language is not allowed.", "error");
-    //return;}}
+    var forbiddenWords = ["badwords", "badwords1"]; 
+    for (var i = 0; i < forbiddenWords.length; i++) {
+        if(userInput.toLowerCase().includes(forbiddenWords[i])) {
+        showMessage("Inappropriate language is not allowed.", "error");
+    return;
+    }
+}
 
     var commentsHistory = JSON.parse(localStorage.getItem('commentsHistory')) || [];
     // Проверка на уникальность комментария
