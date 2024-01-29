@@ -8,7 +8,7 @@ function submitForm() {
         return;
     }
     // Проверка на наличие запрещенных слов
-    var forbiddenWords = ["badwords.txt", "badwords1.txt"]; 
+    var forbiddenWords = ["scripts/badwords.txt", "scripts/badwords1.txt"]; 
     for (var i = 0; i < forbiddenWords.length; i++) {
         if(userInput.toLowerCase().includes(forbiddenWords[i])) {
         showMessage("Inappropriate language is not allowed.", "error");
