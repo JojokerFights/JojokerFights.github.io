@@ -39,7 +39,7 @@
   .title {
        font-family: 'Ultra', serif;
        color: #FAFAD2;
-       padding: 15px;
+       padding: 18px;
        display: block;
        font-size: 48px;
    }
@@ -114,7 +114,7 @@
    
   #commentForm {
     max-width: 700px; /* Установим максимальную ширину по своему усмотрению */
-    max-height: 280px;
+    height: 190px;
     margin: auto;/* Центрируем форму на странице */
     background-color: #FFE4E1;
     padding: 1px 5x 1px 1px;/* Добавляем немного отступов вокруг формы */
