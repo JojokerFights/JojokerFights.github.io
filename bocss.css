@@ -67,7 +67,6 @@
 
   #m2 {
        width: 100%;
-       height: 250px;
        margin: auto;
        border-radius: 0 50px 0 50px;
        border: solid 2px black;
@@ -114,7 +113,7 @@
    }
    
   #commentForm {
-    max-width: 700px; /* Установим максимальную ширину по своему усмотрению */
+    max-width: 700px; /* Установим максимальную ширину по своему усмотрению */  height: 300px;
     margin: auto;/* Центрируем форму на странице */
     background-color: #FFE4E1;
     padding: 1px 5x 1px 1px;/* Добавляем немного отступов вокруг формы */
