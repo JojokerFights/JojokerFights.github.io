@@ -114,6 +114,7 @@
    
   #commentForm {
     max-width: 700px; /* Установим максимальную ширину по своему усмотрению */
+    max-height: 350px;
     margin: auto;/* Центрируем форму на странице */
     background-color: #FFE4E1;
     padding: 1px 5x 1px 1px;/* Добавляем немного отступов вокруг формы */
