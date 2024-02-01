@@ -4,43 +4,44 @@ class Registration {
         this.email = email;
         this.password = password;
     }
+
     validate() {
-        // Check if the username is empty
-        if (this.username.trim() === '') {
+        if (!this.validateUsername()) {
             return false;
         }
 
-        // email is vali.don
-        if (!this.validateEmail(this.email)) {
+        if (!this.validateEmail()) {
             return false;
         }
 
-        // password is strong enough for vali.don
-        if (!this.validatePassword(this.password)) {
-        return false;
+        if (!this.validatePassword()) {
+            return false;
         }
-    return true;
+
+        return true;
     }
-    */
-    validateEmail(email) {
+
+    validateUsername() {
+        return this.username.trim() !== '';
+    }
+
+    validateEmail() {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        return emailPattern.test(email);
+        return emailPattern.test(this.email);
     }
 
-    validatePassword(password) {
-      if (password.length < 8) {
+    validatePassword() {
+        if (this.password.length < 8) {
             return false;
         }
+
         const uppercasePattern = /[A-Z]/;
         const lowercasePattern = /[a-z]/;
         const digitPattern = /[0-9]/;
 
-        return uppercasePattern.test(password) && lowercasePattern.test(password) && digitPattern.test(password);
+        return uppercasePattern.test(this.password) && lowercasePattern.test(this.password) && digitPattern.test(this.password);
     }
 }
-
-// Usage Example for Registration
 
 const user = new Registration('john_doe', 'john.doe@example.com', 'Password123');
 
