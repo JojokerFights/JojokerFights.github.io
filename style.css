@@ -2,7 +2,10 @@
 
 body {
        background-color: #4682B4;
-   }
+       background-image: url('/Jojoooing !!!.webp');
+       background-size: cover;
+       background-position: center;
+}
    
   header{
       text-align: center;
