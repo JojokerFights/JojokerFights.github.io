@@ -1,0 +1,54 @@
+/**
+ * Represents a user registration.
+ */
+  class Registration {
+    constructor(username, email, password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
+    validate() {
+        // Check if the username is empty
+        if (this.username.trim() === '') {
+            return false;
+        }
+
+        // email is vali.don
+        if (!this.validateEmail(this.email)) {
+            return false;
+        }
+
+        // password is strong enough for vali.don
+        if (!this.validatePassword(this.password)) {
+        return false;
+        }
+    return true;
+    }
+    */
+    validateEmail(email) {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        return emailPattern.test(email);
+    }
+
+    validatePassword(password) {
+      if (password.length < 8) {
+            return false;
+        }
+        const uppercasePattern = /[A-Z]/;
+        const lowercasePattern = /[a-z]/;
+        const digitPattern = /[0-9]/;
+
+        return uppercasePattern.test(password) && lowercasePattern.test(password) && digitPattern.test(password);
+    }
+}
+
+// Usage Example for Registration
+
+const user = new Registration('john_doe', 'john.doe@example.com', 'Password123');
+
+if (user.validate()) {
+    console.log('Registration data is valid.');
+} else {
+    console.log('Invalid registration data.');
+}
