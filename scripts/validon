@@ -1,7 +1,4 @@
-/**
- * Represents a user registration.
- */
-  class Registration {
+class Registration {
     constructor(username, email, password) {
         this.username = username;
         this.email = email;
