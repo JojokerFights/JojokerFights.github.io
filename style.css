@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Ultra&display=swap');
 
 body {
-       background-color: #4682B4;
+       background-image: url('backside.png');
+       background-size: contain;
+       background-position: center;
    }
    
   header{
