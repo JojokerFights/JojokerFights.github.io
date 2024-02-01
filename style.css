@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Ultra&display=swap');
 
 body {
-       background-image: url('backside.jpg');
-       background-repeat: no-repeat;
-       background-size: cover;
-       background-position: center;
-}
+       background-color: #4682B4;
+   }
    
   header{
       text-align: center;
