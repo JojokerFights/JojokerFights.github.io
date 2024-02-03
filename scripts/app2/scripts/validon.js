@@ -28,19 +28,21 @@ $(document).ready(function() {
               email: $("#email").val(),
               password: $("#password").val()
             };
-            // localStorage = привязан к домену
-            // Сохранение на localStorage
-            // Важно! При смене домена = сохранения пропадают
+            // localStorage = Tied to the domain
+            // <!----Saves at localStorage--->
+            // Important! When changing the domain = saves autoClear
             if (validateFormData(formData)) {
               var usersDatabase = JSON.parse(localStorage.getItem("usersDatabase")) || [];
               usersDatabase.push(formData);
               localStorage.setItem("usersDatabase", JSON.stringify(usersDatabase));
-              
-              window.location.href = "indexr.html";
+             // <!---- Only your domain----> not another 
+             // even if another domain opens in another tab
+              window.location.href = "#";//Think how to add
             }
           }
         });
-        //Добавляем обработчик события для кнопки
+        
+        //Adding an event handler for the button.
         $("#registerButton").on("click", function() {
           $("#registration").submit();
         });
@@ -48,10 +50,7 @@ $(document).ready(function() {
 
       function validateFormData(formData) {
         
-        // else validationinfo if to be needed
+        //Add validateFormData if to be needed(optional)
+              
         return true;
       }
-function toggleDrawer() {
-      var drawer = document.getElementById("myDrawer");
-      drawer.style.width = (drawer.style.width === "250px") ? "0" : "250px";
-    }
