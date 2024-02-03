@@ -123,26 +123,20 @@ body {
        font-family: Georgia;
        border: solid 1.5px black;
     }
-    .drawer-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 0;
-      overflow-x: hidden;
-      transition: width 0.3s ease-out;
-      background-color: #f1f1f1;
-      padding-top: 60px;
+    details {
+      display: inline-block;
+    }
+
+    summary {
+      cursor: pointer;
     }
 
     .drawer-content {
-      padding: 16px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
     }
 
-    .drawer-button {
-      font-size: 30px;
-      cursor: pointer;
-      position: absolute;
-      top: 20px;
-      left: 10px;
+    details[open] .drawer-content {
+      max-height: 200px; /* Высота, на которую раскрывается шторка */
     }
