@@ -122,4 +122,27 @@ body {
        padding: 10px;
        font-family: Georgia;
        border: solid 1.5px black;
-   }
+    }
+    .drawer-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 0;
+      overflow-x: hidden;
+      transition: width 0.3s ease-out;
+      background-color: #f1f1f1;
+      padding-top: 60px;
+    }
+
+    .drawer-content {
+      padding: 16px;
+    }
+
+    .drawer-button {
+      font-size: 30px;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      left: 10px;
+    }
