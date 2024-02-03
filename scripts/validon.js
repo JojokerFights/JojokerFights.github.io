@@ -51,3 +51,7 @@ $(document).ready(function() {
         
         return true;
       }
+function toggleDrawer() {
+      var drawer = document.getElementById("myDrawer");
+      drawer.style.width = (drawer.style.width === "250px") ? "0" : "250px";
+    }
