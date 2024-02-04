@@ -101,9 +101,8 @@ body {
        font-size: 25px;
        color: #ADFF2F;
        font-weight: bold;
-       text-align: center;
        border-radius: 15px;
-       margin: 10px;
+       margin: 0px;
        padding: 10px;
        border: solid 1.5px black;
        font-family: Georgia;
@@ -113,11 +112,10 @@ body {
        background-color: #3498db;
        font-size: 22px;
        color: Gold;
-       text-align: center;
        font-weight: bold;
        border-radius: 15px;
-       margin: 10px;
-       padding: 10px;
+       margin: 0px;
+       padding: 0px;
        font-family: Georgia;
        border: solid 1.5px black;
     }
