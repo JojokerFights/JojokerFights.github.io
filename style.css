@@ -105,6 +105,7 @@ body {
        font-weight: bold;
        border-radius: 15px;
        width: auto;
+       margin-left; 100px;
        padding: 10px;
        border: solid 1.5px black;
        font-family: Georgia;
@@ -118,6 +119,7 @@ body {
        font-weight: bold;
        border-radius: 15px;
        width: auto;
+       margin-left: 20px;
        padding: 10px;
        font-family: Georgia;
        border: solid 1.5px black;
