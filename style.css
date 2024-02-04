@@ -104,10 +104,11 @@ body {
        color: #ADFF2F;
        font-weight: bold;
        border-radius: 15px;
-       margin: 0px;
+       width: auto;
        padding: 10px;
        border: solid 1.5px black;
        font-family: Georgia;
+      
    }
 
    #ai {
@@ -116,7 +117,7 @@ body {
        color: Gold;
        font-weight: bold;
        border-radius: 15px;
-       margin: 0px;
+       width: auto;
        padding: 10px;
        font-family: Georgia;
        border: solid 1.5px black;
