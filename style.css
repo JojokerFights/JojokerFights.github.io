@@ -99,7 +99,6 @@ body {
    .au {
        background-color: Darkblue;
        font-size: 25px;
-       display: block;
        color: #ADFF2F;
        font-weight: bold;
        text-align: center;
@@ -113,7 +112,6 @@ body {
    #ai {
        background-color: #3498db;
        font-size: 22px;
-       display: block;
        color: Gold;
        text-align: center;
        font-weight: bold;
