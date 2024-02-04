@@ -1,16 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Ultra&display=swap');
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+       background-color: #4682B4;
+       background-size: cover;
+       background-position: center;
+   }
+   
+  header{
+      text-align: center;
+      margin-top: -33px;
+      max-width: 1920px;
+  }
+  
+  main{
+      text-align: center;
+  }
+  
+  nav{
+  }
 
+   .about {
+       border: solid 2px black;
+       border-radius: 15px;
+       background-color: LemonChiffon;
+   }
+
+   .title {
+       font-family: 'Ultra', serif;
+       color: #FAFAD2;
+       padding: 20px;
+       display: block;
+       font-size: 48px;
+   }
+
+   .t1 {
+       font-family: Arial;
+       text-align: center;
+       color: green;
+       font-weight: bold;
+       width: 80px;
+   }
+
+   .abot {
+       font-family: 'PT Serif', serif;
+       color: #F0E68C;
+       font-size: 30px;
+       text-align: left;
+   }
+
+   img {
+       height: 200px;
+       width: 100%;
+       margin: auto;
+       border-radius: 0 50px 0 50px;
+       border: solid 2px black;
+   }
+
+   .lid {
+       text-align: centre;
+   }
+
+   .text {
+       font-family: 'PT Serif', serif;
+       font-weight: bold;
+       color: blue;
+       text-align: center;
+       font-size: 16px;
+   }
+
+   .invite {
+       color: #F0E68C;
+       font-size: 25px;
+       font-family: 'PT Serif', serif;
+       font-weight: bold;
+   }
+
+   .naz {
+       font-size: 20px;
+       font-family: Georgia;
+       background-color: DarkBlue;
+       border-radius: 10px;
+       color: yellow;
+       font-weight: bold;
+       border: solid 1.5px black;
+       display: block;
+   }
+
+   .btn {
+       font-size: 18px;
+       background-color: #3498db;
+       border-radius: 10px;
+       color: LightCyan;
+       font-weight: bold;
+       border: solid 1.5px black;
+       display: inline;
+   }
+
+   .au {
+       background-color: Darkblue;
+       font-size: 25px;
+       display: block;
+       color: #ADFF2F;
+       font-weight: bold;
+       text-align: center;
+       border-radius: 15px;
+       margin: 10px;
+       padding: 10px;
+       border: solid 1.5px black;
+       font-family: Georgia;
+   }
+
+   #ai {
+       background-color: #3498db;
+       font-size: 22px;
+       display: block;
+       color: Gold;
+       text-align: center;
+       font-weight: bold;
+       border-radius: 15px;
+       margin: 10px;
+       padding: 10px;
+       font-family: Georgia;
+       border: solid 1.5px black;
+    }
+    details {
+      display: inline-block;
+    }
+
+    summary {
+      cursor: pointer;
+    }
+
+    .drawer-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    details[open] .drawer-content {
+      max-height: 200px; /* Высота, на которую раскрывается шторка */
+    }
 
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: "Open Sans";
-  font-size: 14px;
-  display: block;
 }
 
 .container {
