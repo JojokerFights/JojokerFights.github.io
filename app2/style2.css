@@ -15,7 +15,8 @@ body {
       text-align: center;
   }
   
-  nav{
+  nav {
+    text-align: center;
   }
 
    .about {
@@ -98,7 +99,7 @@ body {
    .au {
        background-color: Darkblue;
        font-size: 25px;
-       display: block;
+       display: grid;
        color: #ADFF2F;
        font-weight: bold;
        text-align: center;
@@ -112,7 +113,7 @@ body {
    #ai {
        background-color: #3498db;
        font-size: 22px;
-       display: block;
+       display: grid;
        color: Gold;
        text-align: center;
        font-weight: bold;
