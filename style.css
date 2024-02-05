@@ -145,7 +145,7 @@ body {
       transition: max-height 0.3s ease-out;
     }
 
-    details[open] .drawer-content {
+    details[close] .drawer-content {
       max-height: 200px; /* Высота, на которую раскрывается шторка */
     }
     #username, #password {
