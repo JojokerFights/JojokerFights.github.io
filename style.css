@@ -129,6 +129,10 @@ body {
     
     details {
       display: inline-block;
+      border: solid 2px black;
+      border-radius: 15px;
+      padding: 7px;
+      background-color: white;
     }
 
     summary {
@@ -144,3 +148,7 @@ body {
     details[open] .drawer-content {
       max-height: 200px; /* Высота, на которую раскрывается шторка */
     }
+    #username, #password {
+       color: green;
+       font-weight: bold;
+   }
