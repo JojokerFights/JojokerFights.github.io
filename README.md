@@ -1,1 +1,1 @@
-# jojokerfights.github.io
+# jojoing.com
