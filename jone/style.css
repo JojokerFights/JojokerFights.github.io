@@ -1,0 +1,87 @@
+ @media (max-width: 768px) {
+    .list-item img {
+     max-width: 100px;
+     /* Меньшая максимальная ширина для мобильных устройств */
+    }
+   }
+   
+   @media (max-width: 480px) {
+    .list-item img {
+     max-width: 80px;
+     /* Ещё меньше для очень маленьких экранов */
+    }
+   }
+   
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8A1C7C;
+    /* Подобран под цвет фона изображения */
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    /* Отступ сверху для всего содержимого */
+   }
+   
+   .listContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* Устанавливает промежуток между элементами сетки */
+    padding: 10px;
+    /* Добавляет немного внутреннего отступа вокруг содержимого контейнера */
+   }
+   
+   .slider {
+    -webkit-appearance: none;
+    /* Ширина слайдера */
+    height: 15px;
+    border-radius: 5px;
+    background: #D3D3D3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+   }
+   
+   .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+   }
+   
+   .list-container {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 20px;
+    /* Отступ для текста в списке */
+   }
+   
+   .list-item {
+    margin: 10px 0;
+   }
+   
+   .list-item img {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 100%; /* Заставляет изображение заполнять всю ширину контейнера */
+    height: auto; /* Высота изменяется автоматически, сохраняя пропорции */
+    max-width: 150px; /* Максимальная ширина изображения, можно настроить под свои нужды */
+    border-radius: 10px; /* Необязательно: добавляет скругление углов */
+   }
+   
+   .continue-button {
+    background-color: #5741D9;
+    /* Подобран под цвет кнопки изображения */
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 60px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+   }
