@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
    
     function updateImage(index, imgElement) {
         fetch('https://api.thecatapi.com/v1/images/search?size=small', {
-            headers: { 'x-api-key': 'YOUR_API_KEY' }
+            headers: { 'x-api-key': 'api_key=live_xuBbWHlLwy2BIScAAxftB9fBwsIZtBl268TFLf3dMtE5RZcq1cntWIzyzLmjUDQI' }
         })
         .then(response => response.json())
         .then(data => {
