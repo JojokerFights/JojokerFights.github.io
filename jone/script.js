@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const slider = document.getElementById("myRange");
     const output = document.getElementById("demo");
     const listContainer = document.getElementById("listContainer");
-    output.innerHTML = slider.value; // Инициализация вывода начального значения слайдера
-   
+    output.innerHTML = slider.value;
     function updateList() {
         while (listContainer.firstChild) {
             listContainer.removeChild(listContainer.firstChild);
