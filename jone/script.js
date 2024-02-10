@@ -1,4 +1,4 @@
-document.addEventListener (DOMContentLoaded', function ()
+document.addEventListener (DOMContentLoaded, function ()
 {
     const slider = document.getElementById("myRange"); const output = document.getElementById("demo");
                                                            const listContainer = document.getElementById("listContainer");
