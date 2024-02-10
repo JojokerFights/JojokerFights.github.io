@@ -1,14 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const slider = document.getElementById("myRange");
-    const output = document.getElementById("demo");
-    const listContainer = document.getElementById("listContainer");
-    output.innerHTML = slider.value;
-    function updateList() {
-        while (listContainer.firstChild) {
-            listContainer.removeChild(listContainer.firstChild);
+document.addEventListener (DOMContentLoaded', function
+{
+    const slider = document.getElementById("myRange"); const output = document.getElementById("demo");
+                                                           const listContainer = document.getElementById("listContainer");
+                                                           output.innerHTML = slider.value;
+                                                           function updateList()
+{
+    while (listContainer.firstChild) { listContainer.removeChild(listContainer.firstChild);
         }
-   
-        let quantity = slider.value;
+    let quantity = slider.value;
         for (let i = 1; i <= quantity; i++) {
             const listItem = document.createElement("li");
             listItem.classList.add("list-item");
