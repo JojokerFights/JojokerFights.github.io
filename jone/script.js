@@ -17,10 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const img = document.createElement("img");
             img.src = "https://placehold.co/50";
             img.alt = "Изображение " + i;
-            
             const button = document.createElement("button");
-            button.textContent = "Обновить изображение";
-            
+            button.textContent = "Ещё";
             // Используем немедленно вызываемое функциональное выражение (IIFE) для правильной обработки замыкания
             (function(index, imgElement) {
                 button.addEventListener("click", function() { updateImage(index, imgElement); });
