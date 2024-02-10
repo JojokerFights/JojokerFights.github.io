@@ -1,13 +1,15 @@
-document.addEventListener (DOMContentLoaded, function ()
-{
-    const slider = document.getElementById("myRange"); const output = document.getElementById("demo");
-                                                           const listContainer = document.getElementById("listContainer");
-                                                           output.innerHTML = slider.value;
-                                                           function updateList()
-{
-    while (listContainer.firstChild) { listContainer.removeChild(listContainer.firstChild);
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.getElementById("myRange");
+    const output = document.getElementById("demo");
+    const listContainer = document.getElementById("listContainer");
+    output.textContent = slider.value; // Используем textContent вместо innerHTML
+
+    function updateList() {
+        while (listContainer.firstChild) {
+            listContainer.removeChild(listContainer.firstChild);
         }
-    let quantity = slider.value;
+
+        let quantity = slider.value;
         for (let i = 1; i <= quantity; i++) {
             const listItem = document.createElement("li");
             listItem.classList.add("list-item");
@@ -19,35 +21,41 @@ document.addEventListener (DOMContentLoaded, function ()
             const button = document.createElement("button");
             button.textContent = "Обновить изображение";
             
-            // Здесь мы используем IIFE (Immediately Invoked Function Expression),
-            // чтобы "захватить" текущее значение i для каждой кнопки
-            (function(index) {
-                button.onclick = function() { updateImage(index, img); };
-            })(i);
+            // Используем немедленно вызываемое функциональное выражение (IIFE) для правильной обработки замыкания
+            (function(index, imgElement) {
+                button.addEventListener("click", function() { updateImage(index, imgElement); });
+            })(i, img);
             
             listItem.appendChild(img);
             listItem.appendChild(button);
             listContainer.appendChild(listItem);
         }
     }
-   
+
+    // Функция задержки
+    function delay(duration) {
+        return new Promise(resolve => setTimeout(resolve, duration));
+    }
+
     function updateImage(index, imgElement) {
-        fetch('https://api.thecatapi.com/v1/images/search?size=small', {
-            headers: { 'x-api-key': 'api_key=live_xuBbWHlLwy2BIScAAxftB9fBwsIZtBl268TFLf3dMtE5RZcq1cntWIzyzLmjUDQI' }
-        })
+        // Имитация задержки перед выполнением запроса
+        delay(2000) // Задержка в 2000 мс (2 секунды)
+        .then(() => fetch('https://api.thecatapi.com/v1/images/search?size=small', {
+            headers: { 'x-api-key': 'YOUR_API_KEY' } // Замените на ваш ключ API
+        }))
         .then(response => response.json())
         .then(data => {
-            imgElement.src = data[0].url;
+            imgElement.src = data[0].url; // Обновление src изображения безопасным способом
         })
         .catch(error => console.error('Error:', error));
     }
-    
+
     slider.oninput = function() {
-        output.innerHTML = this.value;
+        output.textContent = this.value; // Обновляем текст безопасным способом
         updateList(); // Обновляем список при каждом изменении слайдера
     };
-   
+
     document.querySelector(".continue-button").addEventListener("click", updateList);
-   
+
     updateList(); // Первоначальное заполнение списка
-   });
+});
