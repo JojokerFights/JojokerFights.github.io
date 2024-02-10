@@ -28,7 +28,6 @@
     
     .slider {
      -webkit-appearance: none;
-     /* Ширина слайдера */
      height: 15px;
      border-radius: 5px;
      background: #D3D3D3;
