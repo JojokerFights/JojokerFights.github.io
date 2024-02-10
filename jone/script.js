@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateImage(index, imgElement) {
         // Имитация задержки перед выполнением запроса
         delay(2000) // Задержка в 2000 мс (2 секунды)
-        .then(() => fetch('https://api.thecatapi.com/v1/images/search?size=small',{
-        headers: { 'this-u-polo ' } // Замените на ваш ключ API
+        .then(() => fetch('https://api.thecatapi.com/v1/images/search?size=small', {
+            headers: { 'this-u-polo ' } // Замените на ваш ключ API
         }))
         .then(response => response.json())
         .then(data => {
