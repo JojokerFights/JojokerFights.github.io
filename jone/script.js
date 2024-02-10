@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Имитация задержки перед выполнением запроса
         delay(2000) // Задержка в 2000 мс (2 секунды)
         .then(() => fetch('https://api.thecatapi.com/v1/images/search?size=small',{
-        headers: { 'x-api-key':'api_key=live_xuBbWHlLwy2BIScAAxftB9fBwsIZtBl268TFLf3dMtE5RZcq1cntWIzyzLmjUDQI' } // Замените на ваш ключ API
+        headers: { 'this-u-polo ' } // Замените на ваш ключ API
         }))
         .then(response => response.json())
         .then(data => {
