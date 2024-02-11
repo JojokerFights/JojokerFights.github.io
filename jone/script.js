@@ -35,13 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
         return new Promise(resolve => setTimeout(resolve, duration));
     }
 
-    function updateImage(index, imgElement) {
-        // Имитация задержки перед выполнением запроса
+    function updateImage(index, imgElement){
         delay(2000) // Задержка в 2000 мс (2 секунды)
-        .then(() => fetch('https://api.thecatapi.com/v1/images/search?size=small',
-                          {
-            headers: { 'x-api-key':'X-Yor-KEY' } // Замените на ваш ключ API
-        }))
+        .then(() => fetch('https://api.thecatapi.com/v1/images/search?size=small', {
+            headers: { 'x-api-key':'X-Yor-KEY' }
+                }))
         .then(response => response.json())
         .then(data => {
             imgElement.src = data[0].url; // Обновление src изображения безопасным способом
