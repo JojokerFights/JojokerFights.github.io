@@ -1,101 +1,22 @@
- @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Ultra&display=swap');
-        body {
-        background-color: #4682B4;
-        background-size: cover;
-        background-position: center;
-        }
-        
-        header {
-            text-align: center;
-            margin-top: -33px;
-            max-width: 1920px;
-        }
-        
-        main {
-            text-align: center;
-        }
-        
-        nav {
-            text-align: center;
-            display: inline;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-        .about {
-            border: solid 2px black;
-            border-radius: 15px;
-            background-color: LemonChiffon;
-        }
-
-        .title {
-            font-family: 'Ultra', serif;
-            color: #FAFAD2;
-            padding: 20px;
-            display: block;
-            font-size: 48px;
-        }
-
-        img {
-            height: 200px;
-            width: 100%;
-            margin: auto;
-            border-radius: 0 50px 0 50px;
-            border: solid 2px black;
-        }
-
-        .text, .abot, .invite, .au, #ai {
-            font-family: 'PT Serif', serif;
-        }
-
-        .text {
-            font-weight: bold;
-            color: blue;
-            text-align: center;
-            font-size: 16px;
-        }
-
-        .abot {
-            color: #F0E68C;
-            font-size: 30px;
-            text-align: left;
-        }
-
-        .invite {
-            color: #F0E68C;
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .au, #ai {
-            background-color: Darkblue;
-            color: #ADFF2F;
-            font-weight: bold;
-            border-radius: 15px;
-            padding: 10px;
-            border: solid 1.5px black;
-            cursor: pointer;
-            font-size: 25px; /* Adjusted for consistency */
-            margin-left: 20px; /* Adjusted for consistency */
-            display: inline-block; /* Improved display */
-        }
-
-        details {
-            display: inline-block;
-            border: solid 2px black;
-            border-radius: 15px;
-            padding: 7px;
-            background-color: white;
-        }
-
-        summary {
-            cursor: pointer;
-        }
-
-        .drawer-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-
-        details[open] .drawer-content {
-            max-height: 200px; /* Corrected attribute for opening */
-        }
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+     }
+     
+     h1 {
+      border-radius: 1px;
+      font-family: "Bebas Neue", sans-serif;
+      text-align: center;
+      font-size: 57px;
+      font-style: normal;
+     }
+     h3{
+        font-size: 18px;
+     }
+     
+    div {
+     display: block;
+     }
