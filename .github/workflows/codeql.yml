@@ -13,11 +13,11 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ $default-branch, $protected-branches ]
   pull_request:
-    branches: [ "jojoing.com" ]
+    branches: [ $default-branch, $protected-branches ]
   schedule:
-    - cron: '30 20 * * 6'
+    - cron: $cron-weekly
 
 jobs:
   analyze:
@@ -40,8 +40,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'javascript-typescript' ]
-        # CodeQL supports [ 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'swift' ]
+        language: [ $detected-codeql-languages ]
+        # CodeQL supports [ $supported-codeql-languages ]
         # Use only 'java-kotlin' to analyze code written in Java, Kotlin or both
         # Use only 'javascript-typescript' to analyze code written in JavaScript, TypeScript or both
         # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
