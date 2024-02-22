@@ -1,137 +1,88 @@
-<!doctype html>
-<html lang="en-Us">
- 
- <head>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-   content="width=device-width, initial-scale=1">
-  <title>My first work</title>
-  <link
-   href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-   rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
- </head>
- 
- <body>
-  <header
-   class="bg-dark container-fluid p-3 text-white">
-   <div class="container">
-    <h1 class="label">Jo jo ING</h1>
-   </div>
-  </header>
-  <div>
-   <details class="container">
-    <label>
-     <h2 class="label">Hello everyone</h2>
-     <br>
-    </label>
-    <summary class="dats">
-     <p>How’s everyone’s learning journey
-      going? I’m eager to hear about your
-      achievements and challenges.
-      I’d like to share a bit about my own
-      journey. I was born in Ukraine, in a
-      modest
-      setting, and educated at a Jewish
-      school.
-      After completing the ninth grade, a
-      door
-      opened for me to move to Israel, a
-      turning point in my life. My
-      fascination
-      with computers started early, not with
-      gaming but with their inner workings
-      and
-      technology. Growing up in a
-      financially
-      constrained family meant I couldn’t
-      fully
-      explore this interest, but it never
-      dampened my spirit. Perhaps, it’s why
-      I’m
-      here sharing my story instead of
-      facing a
-      much bleaker path that others in my
-      situation might have.
+  <title>Fantasy talking</title>
+  <style>
+   
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
       
-      At 14, an opportunity arose to study
-      in
-      Israel, focusing on computer
-      engineering
-      through a program offered by Cisco. At
-      first, I hardly knew the significance
-      of
-      Cisco, but those initial months were
-      filled with awe and learning.
-      
-      After three fruitful years at what was
-      affectionately known as a remarkable
-      academy, I felt ready to take on the
-      world, buoyed by pride from my family
-      and
-      myself. However, life has a way of
-      throwing curveballs. A distressing
-      call
-      informed me of a close relative’s
-      passing, a profound loss that shook my
-      world and halted my studies.
-      
-      I returned to Ukraine for three years,
-      a
-      period marked by reflection and
-      eventually, a pivot to vocational
-      training as a welder, aligning with
-      the
-      industrial opportunities in my
-      hometown.
-      This detour into a field far removed
-      from
-      IT seemed like settling, yet it was a
-      step on my path.
-      
-      Fate, however, wasn’t done with me. An
-      unexpected offer to return to Israel
-      came, a serendipitous moment that felt
-      like the universe’s way of nudging me
-      back towards my passion for technology
-      and computers.
-      
-      Now, at 26, my story is still
-      unfolding,
-      but I have some story continuity…</p>
-    </summary>
-   </details>
-  </div>
-  <main class="container mt-5">
-   <section>
-    <h2>Registration</h2>
-    <form id="registrationForm">
-     <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email"
-       class="form-control" id="email"
-       placeholder="Tap your email">
-     </div>
-     <div class="form-group">
-      <label for="password">Password</label>
-      <input type="password"
-       class="form-control" id="password"
-       placeholder="Password">
-     </div>
-     <button type="submit"
-      class="btn btn-primary">Join
-      in</button>
-    </form>
-   </section>
+    .fade-in {
+      animation: fadeIn 2s;
+    }
+    
+    .hover-highlight {
+      transition: background-color 0.5s ease;
+    }
+    
+    .hover-highlight:hover {
+      background-color: #f0f0f0;
+    }
+    
+    button:hover {
+      transform: scale(1.05);
+      transition: transform 0.25s ease;
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Jo Jo IGN</strong>(On-Working)</li>
+    </ul>
+    <ul>
+      <li><a href="index.html#">Main page</a></li>
+      <li><a href="index.html#">Stories</a></li>
+      <li><a href="index.html#" role="button">Community</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <div class="grid fade-in">
+      <section>
+        <hgroup>
+          <h2>Welcome to the world of fantasy!</h2>
+          <h3>Discover the magic of stories and legends.</h3>
+        </hgroup>
+        <p>On our forum you will find the most exciting stories written and read by fantasy fans from around the world. From classic fairy tales to modern epics, there is everything for genre lovers.</p>
+        <figure>
+          <img src="https://source.unsplash.com/featured/?fantasy" alt="The world of fantasy" />
+          <figcaption><a href="#" target="_blank">Just EN•RU•IL Jo ING</a></figcaption>
+        </figure>
+        <h3>Join the community</h3>
+        <p>Become part of our unique community where everyone can share their story or just enjoy reading. Create new topics, participate in discussions and meet like-minded people.</p>
+        <h3>Explore interactive elements</h3>
+        <p>Our site is now equipped with animations and interactive elements that improve your experience. Move the cursor over the various elements to see effects such as highlighting and increasing the buttons. This adds dynamics and improves the overall experience of using the site.</p>
+      </section>
+    </div>
   </main>
-  <footer
-   class="bg-dark container-fluid p-3 text-white mt-5">
-   <div class="container text-center">© 2024
-    My first work</div>
+  <section aria-label="Subscribe example">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Subscribe to us</h2>
+          <h3>Stay up to date with new stories!</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="Your name" aria-label="Your name" required>
+          <input type="email" id="email" name="email" placeholder="E-mail" aria-label="Your mail" required>
+          <button type="submit" class="hover-highlight" onclick="event.preventDefault()">To subscribe</button>
+        </form>
+      </article>
+    </div>
+  </section>
+  <footer class="container">
+    <small>
+      <a href="index.html#">Privacy policy</a> • <a href="index.html#">Terms of use</a>
+    </small>
   </footer>
- <script src="scripts/jquery-3.7.1.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- </body>
- 
+</body>
 </html>
