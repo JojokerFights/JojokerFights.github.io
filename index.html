@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Fantasy talking</title>
-  <style>
-   
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-      
-    .fade-in {
-      animation: fadeIn 2s;
-    }
-    
-    .hover-highlight {
-      transition: background-color 0.5s ease;
-    }
-    
-    .hover-highlight:hover {
-      background-color: #f0f0f0;
-    }
-    
-    button:hover {
-      transform: scale(1.05);
-      transition: transform 0.25s ease;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Fantasy talking</title>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 2s;
+        }
+
+        .hover-highlight {
+            transition: background-color 0.5s ease;
+        }
+
+        .hover-highlight:hover {
+            background-color: #f0f0f0;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            transition: transform 0.25s ease;
+        }
+    </style>
 </head>
+
 <body>
-  <nav class="container-fluid">
-    <ul>
-      <li><h3><strong>Jo Jo ING</strong></h3>(On-Working)</li>
-    </ul>
-    <ul>
-      <li><a href="index.html#">Main page</a></li>
-      <li><a href="index.html#">Stories</a></li>
-      <li><a href="index.html#" role="button">Community</a></li>
-    </ul>
-  </nav>
-  <main class="container">
-    <div class="grid fade-in">
-      <section>
-        <hgroup>
-          <h2>Welcome to the world of fantasy!</h2>
-          <h3>Discover the magic of stories and legends.</h3>
-        </hgroup>
-        <p>On our forum you will find the most exciting stories written and read by fantasy fans from around the world. From classic fairy tales to modern epics, there is everything for genre lovers.</p>
-        <figure>
-          <img src="https://source.unsplash.com/featured/?fantasy" alt="The world of fantasy" />
-          <figcaption><a href="#" target="_blank">Just EN•RU•IL Jo ING</a></figcaption>
-        </figure>
-        <h3>Join the community</h3>
-        <p>Become part of our unique community where everyone can share their story or just enjoy reading. Create new topics, participate in discussions and meet like-minded people.</p>
-        <h3>Explore interactive elements</h3>
-        <p>Our site is now equipped with animations and interactive elements that improve your experience. Move the cursor over the various elements to see effects such as highlighting and increasing the buttons. This adds dynamics and improves the overall experience of using the site.</p>
-      </section>
-    </div>
-  </main>
-  <section aria-label="Subscribe example">
-    <div class="container">
-      <article>
-        <hgroup>
-          <h2>Subscribe to us</h2>
-          <h3>Stay up to date with new stories!</h3>
-        </hgroup>
-        <form class="grid">
-          <input type="text" id="firstname" name="firstname" placeholder="Your name" aria-label="Your name" required>
-          <input type="email" id="email" name="email" placeholder="E-mail" aria-label="Your mail" required>
-          <button type="submit" class="hover-highlight" onclick="event.preventDefault()">To subscribe</button>
-        </form>
-      </article>
-    </div>
-  </section>
-  <footer class="container">
-    <small>
-      <a href="index.html#">Privacy policy</a> • <a href="index.html#">Terms of use</a>
-    </small>
-  </footer>
+    <nav class="container-fluid">
+        <ul>
+            <li>
+                <h3><strong>Jo Jo ING</strong></h3>(On-Working)
+            </li>
+        </ul>
+        <ul>
+            <li><a href="index.html#">Main page</a></li>
+            <li><a href="index.html#">Stories</a></li>
+            <li><a href="index.html#" role="button">Community</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid fade-in">
+            <section>
+                <hgroup>
+                    <h2>Welcome to the world of fantasy!</h2>
+                    <h3>Discover the magic of stories and legends.</h3>
+                </hgroup>
+                <p>On our forum you will find the most exciting stories written and read by fantasy fans from around the world. From classic fairy tales to modern epics, there is everything for genre lovers.</p>
+                <figure>
+                    <img src="https://source.unsplash.com/featured/?fantasy" alt="The world of fantasy" />
+                    <figcaption><a href="#" target="_blank">Just EN•RU•IL Jo ING</a></figcaption>
+                </figure>
+                <h3>Join the community</h3>
+                <p>Become part of our unique community where everyone can share their story or just enjoy reading. Create new topics, participate in discussions and meet like-minded people.</p>
+                <h3>Explore interactive elements</h3>
+                <p>Our site is now equipped with animations and interactive elements that improve your experience. Move the cursor over the various elements to see effects such as highlighting and increasing the buttons. This adds dynamics and improves the overall experience of using the site.</p>
+            </section>
+        </div>
+    </main>
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Subscribe to us</h2>
+                    <h3>Stay up to date with new stories!</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="Your name" aria-label="Your name" required>
+                    <input type="email" id="email" name="email" placeholder="E-mail" aria-label="Your mail" required>
+                    <button type="submit" class="hover-highlight" onclick="event.preventDefault()">To subscribe</button>
+                </form>
+            </article>
+        </div>
+    </section>
+    <footer class="container">
+        <small>
+            <a href="index.html#">Privacy policy</a> • <a href="index.html#">Terms of use</a>
+        </small>
+    </footer>
 </body>
+
 </html>
