@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'javascript', 'python' ] # Примеры языков, настрой их под свой проект
+        language: [ 'javascript-typescript' ] # Примеры языков, настрой их под свой проект
 
     steps:
     - name: Checkout repository
