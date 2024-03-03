@@ -10,7 +10,7 @@ currently being supported with security updates.
 | 0.0.x   | :white_check_mark: |
 | 0.0.x   | :x:                |
 | 0.0.x   | :white_check_mark: |
-| 0.0.x   | :xdeveleope: |
+| 0.0.x   | :UN: |
 
 ## Reporting a Vulnerability
 
