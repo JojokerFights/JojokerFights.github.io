@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+/* Root variables for managing theme colors, sizes, and fonts */
+:root {
+    --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --line-height: 1.5;
+    --font-weight: 400;
+    --font-size: 16px;
+    --border-radius: 0.25rem;
+    --border-width: 1px;
+    --outline-width: 3px;
+    --spacing: 1rem;
+    --typography-spacing-vertical: 1.5rem;
+    --block-spacing-vertical: calc(var(--spacing) * 2);
+    --block-spacing-horizontal: var(--spacing);
+    --grid-spacing-vertical: 0;
+    --grid-spacing-horizontal: var(--spacing);
+    --form-element-spacing-vertical: 0.75rem;
+    --form-element-spacing-horizontal: 1rem;
+    --nav-element-spacing-vertical: 1rem;
+    --nav-element-spacing-horizontal: 0.5rem;
+    --nav-link-spacing-vertical: 0.5rem;
+    --nav-link-spacing-horizontal: 0.5rem;
+    --form-label-font-weight: var(--font-weight);
+    --transition: 0.2s ease-in-out;
+    --modal-overlay-backdrop-filter: blur(0.25rem);
+    --text-decoration: none;
+    --font-size-small: 0.875em;
+    --font-weight-bold: 700;
+    --text-decoration-underline: underline;
+}
+
+/* Responsive font sizes */
+@media (min-width: 576px) { :root { --font-size: 17px; }}
+@media (min-width: 768px) { :root { --font-size: 18px; }}
+@media (min-width: 992px) { :root { --font-size: 19px; }}
+@media (min-width: 1200px) { :root { --font-size: 20px; }}
+
+/* Utility classes */
+.small { font-size: var(--font-size-small); }
+.bold { font-weight: var(--font-weight-bold); }
+.underline { text-decoration: var(--text-decoration-underline); }
+
+/* Basic element styling */
+body, h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+    color: inherit; /* Ensures elements use parent's text color */
+    text-decoration: var(--text-decoration);
+}
+
+/* Header and section spacings */
+header, section, footer {
+    padding: var(--block-spacing-vertical) var(--block-spacing-horizontal);
+}
+
+/* Link hover and active styles */
+a:hover, a:active {
+    color: #0056b3; /* Example hover color */
+    text-decoration: var(--text-decoration-underline);
+}
+
+/* Button base styles */
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+    display: inline-block;
+    padding: var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);
+    background-color: #007bff; /* Example button color */
+    border: var(--border-width) solid transparent;
+    border-radius: var(--border-radius);
+    transition: color var(--transition), background-color var(--transition), border-color var(--transition);
+    cursor: pointer;
+    font-size: var(--font-size);
+}
+
+/* Button variant styles */
+button.primary, input[type="submit"].primary {
+    background-color: #007bff; /* Example primary color */
+    color: white;
+}
+
+button.secondary, input[type="button"].secondary {
+    background-color: #6c757d; /* Example secondary color */
+    color: white;
+}
+
+button.outline, input[type="reset"].outline {
+    background-color: transparent;
+    border-color: #007bff; /* Example outline color */
+    color: #007bff;
+}
+
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, nav ul {
+    background-color: #fff;
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.welcome h1, .community h2 {
+    color: #333;
+}
+
+form {
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-style: none
+}
+
+:root:not([data-theme=dark]),
+[data-theme=light] {
+    --background-color: hsl(32, 74%, 95%);
+    --color: hsl(205, 20%, 32%);
+    --h1-color: hsl(205, 30%, 15%);
+    --h2-color: #24333e;
+    --h3-color: hsl(205, 25%, 23%);
+    --h4-color: #374956;
+    --h5-color: hsl(205, 20%, 32%);
+    --h6-color: #4d606d;
+    --muted-color: hsl(205, 10%, 50%);
+    --muted-border-color: hsl(205, 20%, 94%);
+    --primary: hsl(195, 85%, 41%);
+    --primary-hover: hsl(195, 90%, 32%);
+    --primary-focus: rgba(16, 149, 193, 0.125);
+    --primary-inverse: #fff;
+    --secondary: hsl(205, 15%, 41%);
+    --secondary-hover: hsl(205, 20%, 32%);
+    --secondary-focus: rgba(89, 107, 120, 0.125);
+    --secondary-inverse: #fff;
+    --contrast: hsl(205, 30%, 15%);
+    --contrast-hover: #000;
+    --contrast-focus: rgba(89, 107, 120, 0.125);
+    --contrast-inverse: #fff;
+    --mark-background-color: #fff2ca;
+    --mark-color: #543a26;
+    --ins-color: #388e3c;
+    --del-color: #c62828;
+    --blockquote-border-color: var(--muted-border-color);
+    --blockquote-footer-color: var(--muted-color);
+    --button-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    --button-hover-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    --form-element-background-color: transparent;
+    --form-element-border-color: hsl(205, 14%, 68%);
+    --form-element-color: var(--color);
+    --form-element-placeholder-color: var(--muted-color);
+    --form-element-active-background-color: transparent;
+    --form-element-active-border-color: var(--primary);
+    --form-element-focus-color: var(--primary-focus);
+    --form-element-disabled-background-color: hsl(205, 18%, 86%);
+    --form-element-disabled-border-color: hsl(205, 14%, 68%);
+    --form-element-disabled-opacity: 0.5;
+    --form-element-invalid-border-color: #c62828;
+    --form-element-invalid-active-border-color: #d32f2f;
+    --form-element-invalid-focus-color: rgba(211, 47, 47, 0.125);
+    --form-element-valid-border-color: #388e3c;
+    --form-element-valid-active-border-color: #43a047;
+    --form-element-valid-focus-color: rgba(67, 160, 71, 0.125);
+    --switch-background-color: hsl(205, 16%, 77%);
+    --switch-color: var(--primary-inverse);
+    --switch-checked-background-color: var(--primary);
+    --range-border-color: hsl(205, 18%, 86%);
+    --range-active-border-color: hsl(205, 16%, 77%);
+    --range-thumb-border-color: var(--background-color);
+    --range-thumb-color: var(--secondary);
+    --range-thumb-hover-color: var(--secondary-hover);
+    --range-thumb-active-color: var(--primary);
+    --table-border-color: var(--muted-border-color);
+    --table-row-stripped-background-color: #f6f8f9;
+    --code-background-color: hsl(205, 20%, 94%);
+    --code-color: var(--muted-color);
+    --code-kbd-background-color: var(--contrast);
+    --code-kbd-color: var(--contrast-inverse);
+    --code-tag-color: hsl(330, 40%, 50%);
+    --code-property-color: hsl(185, 40%, 40%);
+    --code-value-color: hsl(40, 20%, 50%);
+    --code-comment-color: hsl(205, 14%, 68%);
+    --accordion-border-color: var(--muted-border-color);
+    --accordion-close-summary-color: var(--color);
+    --accordion-open-summary-color: var(--muted-color);
+    --card-background-color: var(--background-color);
+    --card-border-color: var(--muted-border-color);
+    --card-box-shadow: 0.0145rem 0.029rem 0.174rem rgba(27, 40, 50, 0.01698), 0.0335rem 0.067rem 0.402rem rgba(27, 40, 50, 0.024), 0.0625rem 0.125rem 0.75rem rgba(27, 40, 50, 0.03), 0.1125rem 0.225rem 1.35rem rgba(27, 40, 50, 0.036), 0.2085rem 0.417rem 2.502rem rgba(27, 40, 50, 0.04302), 0.5rem 1rem 6rem rgba(27, 40, 50, 0.06), 0 0 0 0.0625rem rgba(27, 40, 50, 0.015);
+    --card-sectionning-background-color: #fbfbfc;
+    --dropdown-background-color: #fbfbfc;
+    --dropdown-border-color: #e1e6eb;
+    --dropdown-box-shadow: var(--card-box-shadow);
+    --dropdown-color: var(--color);
+    --dropdown-hover-background-color: hsl(205, 20%, 94%);
+    --modal-overlay-background-color: rgba(213, 220, 226, 0.7);
+    --progress-background-color: hsl(205, 18%, 86%);
+    --progress-color: var(--primary);
+    --loading-spinner-opacity: 0.5;
+    --tooltip-background-color: var(--contrast);
+    --tooltip-color: var(--contrast-inverse);
+
+del {
+    color: var(--del-color)
+}
+
+::-moz-selection {
+    background-color: var(--primary-focus)
+}
+
+::selection {
+    background-color: var(--primary-focus)
+}
+
+:where(audio, canvas, iframe, img, svg, video) {
+    vertical-align: middle
+}
