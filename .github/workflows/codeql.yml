@@ -13,9 +13,9 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ "Jojoing.com", "jojo", "main" ]
+    branches: [ "Jojoing.com", "main" ]
   pull_request:
-    branches: [ "Jojoing.com", "jojo", "main" ]
+    branches: [ "Jojoing.com", "main" ]
   schedule:
     - cron: '37 20 * * 2'
 
@@ -46,6 +46,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        nod-version: 20
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
