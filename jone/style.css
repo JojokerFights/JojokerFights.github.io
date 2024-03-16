@@ -1,32 +1,27 @@
  body {
-    font-family: Arial, sans-serif;
-    background-color: LightBlue;
-    color: black;
-    padding-top: 55px;
-    text-align: center;
-   }
-   
-   @media (min-width: 768px) and (max-width: 1024px) {
-    .maxMobmedia {
-     height: auto;
-    }
-   }
-    
-    #listContainer {
+     font-family: Arial, sans-serif;
+     background-color: #0B3B39;
+     color: black;
+     padding-top: 55px;
+     text-align: center;
+ }
+
+ @media (min-width: 768px) and (max-width: 1024px) {
+     .maxMobmedia {
+         height: auto;
+     }
+ }
+
+ #listContainer {
      padding: 10px;
      max-width: 100%;
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 10px;
      padding: 10px;
-    }
-    
-    .sliderLabel{
-    
-    
-    }
-    
-    .slider {
+ }
+
+ .slider {
      -webkit-appearance: none;
      height: 15px;
      border-radius: 5px;
@@ -35,9 +30,9 @@
      opacity: 0.7;
      -webkit-transition: .2s;
      transition: opacity .2s;
-    }
-    
-    .slider::-webkit-slider-thumb {
+ }
+
+ .slider::-webkit-slider-thumb {
      -webkit-appearance: none;
      appearance: none;
      width: 25px;
@@ -45,20 +40,19 @@
      border-radius: 50%;
      background: #4CAF50;
      cursor: pointer;
-    }
-    
-    .list-item {
+ }
+
+ .list-item {
      margin: 10px 0;
-    }
-    
-    .list-item img {
+ }
+
+ .list-item img {
      vertical-align: middle;
      border: 3px;
      padding: 10px;
-    }
-    
-    .continue-button {
-     background-color: #Ff523;
+ }
+
+ .continue-button {
      border: none;
      border-radius: 20px;
      color: orange;
@@ -66,4 +60,4 @@
      margin-top: 20px;
      cursor: pointer;
      font-size: 18px;
-    }
+ }
