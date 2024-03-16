@@ -2,9 +2,9 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ "Jojoing.com", "jojo", "main" ]
+    branches: [ "Jojoing.com", "main" ]
   pull_request:
-    branches: [ "Jojoing.com", "jojo", "main" ]
+    branches: [ "Jojoing.com", "main" ]
   schedule:
     - cron: '37 20 * * 2'
 
@@ -15,8 +15,7 @@ jobs:
     runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
     timeout-minutes: ${{ (matrix.language == 'swift' && 120) || 360 }}
     permissions:
-      
-      security-events: write
+        security-events: write
 
       actions: read
       contents: read
@@ -25,11 +24,12 @@ jobs:
       fail-fast: false
       matrix:
         language: ['javascript-typescript']
-       
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        node-version: 20
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
@@ -39,6 +39,9 @@ jobs:
     - name: Autobuild
       uses: github/codeql-action/autobuild@v3
 
+    - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
+        
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
       with:
