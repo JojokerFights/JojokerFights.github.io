@@ -7,11 +7,10 @@ on:
     branches: [ "Jojoing.com", "main" ]
   schedule:
     - cron: '37 20 * * 2'
-
-  jobs:
-  test:
-    name: ${{ matrix.name }}
-    if: github.repository == 'github/docs-internal' || github.repository == 'github/docs'
+  
+jobs:
+  analize:
+    name: Analyze
 
     runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
     timeout-minutes: ${{ (matrix.language == 'swift' && 120) || 360 }}
