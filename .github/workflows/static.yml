@@ -1,4 +1,3 @@
-
 name: Deploy static content to Pages
 
 on:
@@ -6,11 +5,11 @@ on:
     branches:
       - Jojoing.com
       - main
+
   workflow_dispatch:
 
 permissions:
   contents: read
-  actions: write
   pages: write
   id-token: write
 
@@ -32,28 +31,6 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
-      # Remove artifacts from previous attempts
-      - name: Clean old Pages artifacts
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const { data } = await github.rest.actions.listWorkflowRunArtifacts({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              run_id: context.runId,
-              name: 'github-pages'
-            });
-
-            for (const artifact of data.artifacts) {
-              await github.rest.actions.deleteArtifact({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                artifact_id: artifact.id
-              });
-
-              core.info(`Deleted artifact: ${artifact.id}`);
-            }
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
